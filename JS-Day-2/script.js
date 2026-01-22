@@ -37,3 +37,5 @@ const subtract=
 function(a,b){
     return a-b;
 }
+
+// cannot access the subtract before initialization in anonymous function

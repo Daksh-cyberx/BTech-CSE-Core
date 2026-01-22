@@ -10,7 +10,7 @@ sample(5)
 
 // 2.Arrow function
 
-const sample=()=>console.log("sample")
+const sample=()=>console.log("water")
 sample()
 
 const sample=(a,b)=>{
@@ -22,19 +22,18 @@ console.log(sample(5,10))
 // advantages of arrow function
 
 // 1. don't need return function
-// 2. arrow function is asyncronus function
+// 2. arrow function is syncronus function
 
 // whenever in arrow function, we go to another line of code we use curly bracket and curly bracket becomes the block scope and we have to use return keyword....
 
 
 // 3.Callback function
 // in callback function, if we pass a function as a argument inside another function, then we call it callback function...
-
 function sample(callback){
-    console.log("sample");
+    console.log("water");
     callback();
 }
 function demo(){
-    console.log("demo");
+    console.log("dem");
 }
 sample(demo);

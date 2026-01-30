@@ -42,3 +42,54 @@ function demo(){
     console.log("demo")
 }
 sample(demo);
+//  callback function is a asynchronous function because it will do another task with previous task with simultaneously.
+
+// 3. Arrow function
+
+const demo2=()=>console.log("demo")
+demo2();
+
+
+
+// 4. First class function
+// 1. we can treat a variable as a function
+// 2. we can pass a function as an argument inside another function
+// 3. we can return a function from a function (function curring, attach the function to a variable, then call the variable)
+
+// example of third point....
+function test(){
+    return function test2(a){
+        console.log("test2")
+        return function test3(b){
+            console.log("test3")
+        }
+    }
+}
+let value = test()
+let value2 = value(5)
+value2()
+// test()()()
+
+
+// 5. Higher order function
+    // map, filter, reduce
+
+
+// 6. Anonomous function
+    //   which function have not any name
+
+    //   like setTimeout , etc
+
+    // setTimeout(()=>{
+
+    // },1000)
+
+
+// 7. Self invoking function(IIFE):
+
+// to obtain data privacy and to call a function imediately after the function scope.
+
+let test5 = (function(){
+    return "sample5";
+})()
+console.log(test5)   // if we give any another statement between calling and declare, it will not invoke/call

@@ -14,18 +14,6 @@ while (arr.length>0){
 
 //  Q3. check if array is plaindrome or not.
 
-// let arr1=[1,2,3,4,3,2,1]
-// i=0
-// j=arr1.length-1
-// while (i<j){
-
-// }
-
-
-
-
-
-
 // sir's method:
 
 function palindrome(){

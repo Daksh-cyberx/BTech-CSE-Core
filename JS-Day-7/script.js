@@ -46,3 +46,25 @@ console.log(Object.keys(user))
 // user naam ke object ki saari keys ek array mein aa jayengi
 
 console.log(Object.values(user))
+// user naam ke object ki saari values ek array mein aa jayengi
+
+
+console.log(Object.entries(user))
+// return the array in which convert the key 
+
+
+const car = {
+    make: "Mahindra",
+    model: "Thar"
+};
+// we can't add a new key and value pair but we can change or update existing values
+// Object.seal(objName)
+Object.seal(car);
+
+// we can't add a new key and value pair also can't change or update the existing values
+// Object.freeze(objName)
+Object.freeze(car);
+
+car.model="XUV700";
+car.color="black";
+console.log(car)

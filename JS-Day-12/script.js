@@ -22,7 +22,8 @@ para.forEach((item) => {
     item.style.color = "cyan";
 })
 
+const button = document.getElementById("btn");
 function handleClick(){
-    const button = document.getElementById("btn");
-    button.textContent = "Clicked"
+    alert("hello world");
+    button.textContent = "Clicked";
 }

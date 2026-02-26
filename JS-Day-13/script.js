@@ -1,23 +1,11 @@
-function handleClick() {
-    alert("clicked");
-};
-
-const btn = document.getElementById("btn");
-btn.onclick = function () {
-    this.textContent = "Clicked!";
-    this.style.color = "green";
-};
-
-const button = document.getElementById("hello");
-
-// function myFunction(){                   // this is called using named function method....
-//     console.log("clicked");
-// };
-
-// button.addEventListener("click", myFunction);
-
-button.addEventListener("click", function(event){          // this is called using anonymous function method....
-    console.log("clicked");
-    console.log(event.target);
-})
-
+console.log("a");  //synchronos code
+setTimeout(()=>{       // asynchronos code - it does not block the next line code , runs simultaneously with another code
+    console.log("b")   // but in console, first execute will be synchronos code, then asynchronos code 
+}, 5000);
+setTimeout(()=>{
+    console.log("c")
+}, 3000);
+setTimeout(()=>{
+    console.log("d")
+}, 2000);
+console.log("e");
